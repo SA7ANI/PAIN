@@ -89,8 +89,8 @@ STRINGS:
     #/delfilters or /delallfilters
     not_chat_creator: רק יוצר הקבוצה יכול להשתמש בפקודה זו!
     delall_header: This would delete all filters in this chat. This IS irreversible.
-    confirm_yes: '�?מחק הכל'
-    confirm_no: '�?ביטול'
+    confirm_yes: '??מחק הכל'
+    confirm_no: '??ביטול'
     delall_success: Successfully deleted all ({count}) filters in this chat!
   warns:
     #/warn
@@ -104,8 +104,8 @@ STRINGS:
     max_warn_exceeded: Warnings has been exceeded! {user} has been {action}!
     "max_warn_exceeded:tmute": Warnings has been exceeded! {user} has been tmuted for {time}!
     #warn rmv callback
-    warn_no_admin_alert: "�?You are NOT admin and cannot remove warnings!"
-    warn_btn_rmvl_success: "�?האזהרה נמחקה על ידי {admin}!"
+    warn_no_admin_alert: "??You are NOT admin and cannot remove warnings!"
+    warn_btn_rmvl_success: "??האזהרה נמחקה על ידי {admin}!"
     #/warns
     warns_header: "הנה האזהרות שלך בצ'אט זה\n\n"
     warns: "{count} : <code>{reason}</code> על ידי {admin}\n"
@@ -114,7 +114,7 @@ STRINGS:
     warn_limit: "מגבלת האזהרות ב <b>{chat_name}</b> היא: <code>{num}</code>"
     warnlimit_short: 'מגבלת האזהרות חייבת להיות לפחות 2!'
     warnlimit_long: 'מגבלת האזהרות לא יכולה להיות גדולה מ1000!'
-    warnlimit_updated: '�?מגבלת האזהרות הוגבלה ל{num}'
+    warnlimit_updated: '??מגבלת האזהרות הוגבלה ל{num}'
     #/delwarns
     purged_warns: "{admin} איפס את <code>{num}</code> האזהרות של {user} ב <b>{chat_title}</b>!"
     usr_no_wrn: "למשתמש {user} אין אזהרות בשביל לאפס."
@@ -171,7 +171,7 @@ STRINGS:
     start_hi_group: 'שלום! השם שלי הוא Kaneki'
     start_hi: "שלום! השם שלי הוא <b>Kaneki.</b>\nאני יכול לעזור לך בניהול הקבוצה עם תכונות שימושיות!"
     btn_source: "📦 קוד"
-    btn_help: "�?עזרה"
+    btn_help: "??עזרה"
     btn_lang: "🇮🇱 שפה"
     btn_channel: "📬 חדשות Kaneki"
     btn_group_help: "לחץ כאן לעזרה!"
@@ -423,7 +423,7 @@ STRINGS:
     "connected_chat:cmds": |
       <b>Current connected chat:</b>
       {chat_name}, (bridged commands are {commands}),
-      �?<i>You can only access bridged commands of the connected chat! All other commands would be treated as Local chat</i>
+      ??<i>You can only access bridged commands of the connected chat! All other commands would be treated as Local chat</i>
       Write /disconect to disconnect from chat.
     u_wasnt_connected: "You were not connected to any chat before!"
     select_chat_to_connect: "\n<b>Select a chat to connect:</b>"
@@ -656,7 +656,7 @@ STRINGS:
     "invalid_args:setflood": "Expected a number!"
     overflowed_count: Maximum count should be less than 200!
     config_proc_1: Please send expiration time, '0' (zero) for not being expired.
-    cancel: '�?ביטול'
+    cancel: '??ביטול'
     setup_success: Successfully configured antiflood, now enforces against those who send {count} messages within {time}!
     "setup_success:no_exp": Successfully configured antiflood, allows {count} messages consecutively!
     invalid_time: זמן לא חוקי!
