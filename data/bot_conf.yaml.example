@@ -1,4 +1,4 @@
-# Hitsuki example config
+# Kaneki example config
 
 # Basic
 TOKEN: "YOUR_TOKEN"
@@ -11,11 +11,11 @@ APP_HASH: "YOUR_APP_HASH"
 
 MONGO_URI: localhost
 MONGO_PORT: 27017
-MONGO_DB: 'hitsuki'
+MONGO_DB: 'kaneki'
 
 REDIS_URI: localhost
 REDIS_PORT: 6379
-REDIS_DB_FSM: 1
+REDIS_PASS: 1
 
 BACKUP_PASS: "PASSWORD_HERE"
 
@@ -34,4 +34,4 @@ AUTO_BACKUP: False
 USE_UVLOOP: True
 
 ALLOW_FORWARDS_COMMANDS: False
-ALLOW_COMMANDS_WITH_!: False
+ALLOW_EXCEL: False
