@@ -1,37 +1,37 @@
 ---
 language_info:
-  flag: "🇺🇸"
-  code: en
+  flag: "🇮🇳"
+  code: hi
 STRINGS:
   notes:
     #/save
-    note_saved: "🗒 Note <code>{note_name}</code> saved in <b>{chat_title}</b>!"
-    note_updated: "🗒 Note <code>{note_name}</code> updated in <b>{chat_title}</b>!"
-    you_can_get_note: "\nYou can retrieve this note by using <code>/get {note_name}</code>, or <code>#{note_name}</code>"
+    note_saved: "🗒 नोट <code>{note_name}</code> <b>{chat_title}</b> में सहेजा गया है!"
+    note_updated: "🗒 नोट <code>{note_name}</code> <b>{chat_title}</b> में अपडेट किया गया!"
+    you_can_get_note: "\nआप <code>/get {note_name}</code>, या <code>#{note_name}</code> का उपयोग करके इस नोट को पुनः प्राप्त कर सकते हैं"
     #Translator note: please keep sure that you don't have space in the end of string
-    note_aliases: "\nNote aliases:"
-    blank_note: "Saving blank note is not allowed!"
-    notename_cant_contain: "Note name can't contain \"<code>{symbol}</code>\"!"
+    note_aliases: "\nनोट उपनाम:"
+    blank_note: "खाली नोट सहेजने की अनुमति नहीं है!"
+    notename_cant_contain: "नोट के नाम में \"<code>{symbol}</code>\" नहीं हो सकता!"
     #/get
-    cant_find_note: I can't find this note in <b>{chat_name}</b>!
-    no_note: "Can't find that note."
-    no_notes_pattern: "No notes found by pattern <code>%s</code>"
-    u_mean: "\nDid you mean <code>#{note_name}</code>?"
+    cant_find_note: मुझे यह नोट <b>{chat_name}</b> में नहीं मिल रहा है!
+    no_note: "वह नोट नहीं मिला।"
+    no_notes_pattern: "<code>%s</code> pattern पैटर्न के अनुसार कोई नोट नहीं मिला"
+    u_mean: "\nक्या आपका मतलब <code>#{note_name}</code> से था?"
     #/notes
-    notelist_no_notes: "There aren't any notes in <b>{chat_title}</b>!"
-    notelist_header: "<b>Notes in {chat_name}</b>:"
-    notes_in_private: "Click below button to get notes list."
+    notelist_no_notes: "<b>{chat_title}</b> में कोई नोट नहीं है!"
+    notelist_header: "<b>{chat_name}</b> में नोट:"
+    notes_in_private: "नोट्स सूची प्राप्त करने के लिए नीचे दिए गए बटन पर क्लिक करें।"
     notelist_search: |
-      <b>Pattern:</b> <code>{request}</code>
-      <b>Matched notes:</b>
+      <b>पैटर्न:</b> <code>{request}</code>
+      <b>मिलान नोट:</b>
     #/clear
-    note_removed: "Note <code>#{note_name}</code> removed in <b>{chat_name}</b>!"
+    note_removed: "नोट <code>#{note_name}</code> <b>{chat_name}</b> में हटा दिया गया है!"
     note_removed_multiple: |
-      Removed multiple notes in <b>{chat_name}</b>
-      <b>Removed:</b><code>{removed}</code>
-    not_removed_multiple: "<b>Not removed:</b><code>{not_removed}</code>"
+      <b>{chat_name}</b>. में अनेक नोट निकाले गए
+      <b>निकाला गया:</b><code>{removed}</code>
+    not_removed_multiple: "<b>हटाया नहीं गया:</b><code>{not_removed}</code>"
     #/clearall
-    clear_all_text: "This will remove all notes from {chat_name}. Are you sure?"
+    clear_all_text: "यह {chat_name} से सभी नोट निकाल देगा। क्या आपको यकीन है?"
     clearall_btn_yes: "Yes. Remove all my notes!"
     clearall_btn_no: "No!"
     clearall_done: "All (<code>{num}</code>) notes in {chat_name} were removed!"
