@@ -1,17 +1,16 @@
-# Hitsuki X
+# PAIN
 
-[![Crowdin](https://badges.crowdin.net/hitsukix/localized.svg)](https://crowdin.com/project/hitsukix)
-[![GitHub contributors](https://img.shields.io/github/contributors/HitsukiNetwork/HitsukiX.svg)](https://GitHub.com/HitsukiNetwork/HitsukiX/graphs/contributors/)
-[![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/HitsukiNetwork/HitsukiX)
+[![Crowdin](https://badges.crowdin.net/pain/localized.svg)](https://crowdin.com/project/pain)
+[![GitHub contributors](https://img.shields.io/github/contributors/SA7ANI/PAIN.svg)](https://GitHub.com/SA7ANI/PAIN/graphs/contributors/)
 
-> Hitsuki is a modern and fast Telegram Bot developed entirely to improve the chat experience,
-> Hitsuki contains commands related to Anime, Android, Administrative management and more!
+> PAIN is a modern and fast Telegram Bot developed entirely to improve the chat experience,
+> PAIN contains commands related to Anime, Android, Administrative management and more!
 
 To anyone coming here to **clone this bot**, no support will be given for it. If you PM me on Telegram will be ignored.
 
-You can find the Hitsuki X as [@Hitsuki_BOT](https://t.me/Hitsuki_BOT) on Telegram.
+You can find the PAIN as [@LordPainBot](https://t.me/LordPainBot) on Telegram.
 
-## Hitsuki's features over other bots
+## PAIN's features over other bots
 
 * Modern.
 * Fast.
@@ -19,12 +18,12 @@ You can find the Hitsuki X as [@Hitsuki_BOT](https://t.me/Hitsuki_BOT) on Telegr
 * Fully asynchronous.
 * Fully open-source.
 * Frequently updated.
-* Hitsuki respects your data privacy, we constantly improving privacy and security in Hitsuki.
+* PAIN respects your data privacy, we constantly improving privacy and security in PAIN.
 
 ## Thanks to
 
-* [MrYacha](https://github.com/MrYacha) - Hitsuki X is based on [Sophie Bot](https://gitlab.com/SophieBot/sophie).
+* [MrYacha](https://github.com/MrYacha) - PAIN is based on [Sophie Bot](https://gitlab.com/SophieBot/sophie).
 * [RealAkito](https://github.com/RealAkito) - Most Android related commands are ported from [Haruka Aya bot](https://gitlab.com/HarukaNetwork/OSS/HarukaAya).
 * [DragSama](https://github.com/DragSama) & [TsunayoshiSawada](https://github.com/TsunayoshiSawada) - Help menu system is cherry picked from [AllMightRobot](https://github.com/AnimeKaizoku/AllMightRobot).
 
-And many other [contributors](https://GitHub.com/HitsukiNetwork/HitsukiX/graphs/contributors/).
+And many other [contributors](https://GitHub.com/SA7ANI/PAIN/graphs/contributors/).
