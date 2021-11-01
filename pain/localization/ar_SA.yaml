@@ -139,7 +139,7 @@ STRINGS:
     no_rights_purge: "لا تملك حقوق كافية لتنظيف رسائل هذه المجموعة!"
     reply_to_msg: "قم بالرد على رسالة للحذف!"
     purge_error: "لا أستطيع متابعة التنظيف، محتمل لأنك بدأت في التطهير من رسالة أرسلت قبل أكثر من يومين."
-    fast_purge_done: "<b>اكتمل التنظيف السريع!</b>\nسيتم إزالة هذه الرسالة في 5 ثوان."
+    fast_purge_done: "Purged {count} messages in seconds."
     purge_user_done: "تم حذف جميع الرسائل من {user} بنجاح!"
   misc:
     your_id: "معرفك: <code>{id}</code>\n"
@@ -170,8 +170,9 @@ STRINGS:
     emoji_not_allowed: "أنا آسف، لكن الاسماء المستعارة لا يمكن أن تحتوي على إيموجي 😞"
   pm_menu:
     start_hi_group: 'مرحبًا هناك! إسمي صوفي'
-    start_hi: "مرحبًا هناك! اسمي صوفي، سوف أساعدك في إدارة مجموعتك بطريقة فعالة!"
-    btn_source: "📦 Source code"
+    start_hi: "Hey there! My name is <b>PAIN.</b>\nI can help manage your groups with useful features, feel free to add me to your groups!\n\nAny issues or need help related to me? join our group @TheKonoha11."
+    btn_add: "Add PAIN to Group 👥"
+    btn_support: "💎 Support"
     btn_help: "مساعدة ❔"
     btn_lang: "اللغة 🇷🇺"
     btn_channel: "📡 أخبار صوفي"
