@@ -62,10 +62,11 @@ async def get_start_func(message, strings, edit=False):
     msg = message.message if hasattr(message, 'message') else message
     task = msg.edit_text if edit else msg.reply
     buttons = InlineKeyboardMarkup()
+    buttons.add(InlineKeyboardButton(strings['btn_add'], url='t.me/LordPainBot?startgroup=true'))
     buttons.add(InlineKeyboardButton(strings['btn_help'], callback_data='get_help'),
                 InlineKeyboardButton(strings['btn_lang'], callback_data='lang_btn'))
-    buttons.add(InlineKeyboardButton(strings['btn_channel'], url='https://t.me/CryptoNotion'),
-                InlineKeyboardButton(strings['btn_source'], url='https://github.com/SA7ANI/PAIN'))
+#    buttons.add(InlineKeyboardButton(strings['btn_channel'], url='https://t.me/CryptoNotion'),
+#                InlineKeyboardButton(strings['btn_support'], url='https://t.me/TheKonoha11'))
     # Handle error when user click the button 2 or more times simultaneously
     with suppress(MessageNotModified):
         await task(strings['start_hi'], reply_markup=buttons)

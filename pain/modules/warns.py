@@ -34,6 +34,7 @@ from bson.objectid import ObjectId
 from pain import BOT_ID, bot
 from pain.decorator import register
 from pain.services.mongo import db
+from pain.services.telethon import tbot
 from .misc import customise_reason_start, customise_reason_finish
 from .utils.connections import chat_connection
 from .utils.language import get_strings_dec
@@ -50,6 +51,18 @@ from .utils.user_details import (
 @get_user_and_text_dec()
 async def warn_cmd(message, chat, user, text):
     await warn_func(message, chat, user, text)
+
+
+@register(cmds="dwarn", user_can_restrict_members=True, bot_can_restrict_members=True)
+@chat_connection(admin=True, only_groups=True)
+@get_user_and_text_dec()
+async def warn_cmd(message, chat, user, text):
+    if not message.reply_to_message:
+        await message.reply(strings["reply_to_msg"])
+        return
+    await warn_func(message, chat, user, text)
+    msgs = [message.message_id, message.reply_to_message.message_id]
+    await tbot.delete_messages(message.chat.id, msgs)
 
 
 @get_strings_dec('warns')
@@ -348,6 +361,7 @@ You can keep your members from getting out of control using this feature!
 <b>Available commands:</b>
 <b>General (Admins):</b>
 - /warn (?user) (?reason): Use this command to warn the user! you can mention or reply to the offended user and add reason if needed
+- /dwarn [reply]: Delete the replied message and warn him
 - /delwarns or /resetwarns: This command is used to delete all the warns user got so far in the chat
 
 <b>Warnlimt (Admins):</b>

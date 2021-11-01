@@ -13,16 +13,22 @@
 # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 # GNU Affero General Public License for more details.
 
+import urllib.request
+
 from contextlib import suppress
 from datetime import datetime
+from bs4 import BeautifulSoup
 
 # You should have received a copy of the GNU Affero General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 from aiogram.types import Message
 from aiogram.utils.exceptions import BadRequest, MessageNotModified, MessageToDeleteNotFound
+from telethon import events
+from telethon.tl import functions, types
 
 from pain import decorator
 from pain.decorator import register
+from pain.services.telethon import tbot
 from .utils.disable import disableable_dec
 from .utils.language import get_strings_dec
 from .utils.notes import get_parsed_note_list, send_note, t_unparse_note_item
@@ -251,6 +257,52 @@ __filters__ = {
 }
 
 
+# cricket score
+async def is_register_admin(chat, user):
+
+    if isinstance(chat, (types.InputPeerChannel, types.InputChannel)):
+
+        return isinstance(
+            (
+                await tbot(functions.channels.GetParticipantRequest(chat, user))
+            ).participant,
+            (types.ChannelParticipantAdmin, types.ChannelParticipantCreator),
+        )
+    if isinstance(chat, types.InputPeerChat):
+
+        ui = await tbot.get_peer_id(user)
+        ps = (
+            await tbot(functions.messages.GetFullChatRequest(chat.chat_id))
+        ).full_chat.participants.participants
+        return isinstance(
+            next((p for p in ps if p.user_id == ui), None),
+            (types.ChatParticipantAdmin, types.ChatParticipantCreator),
+        )
+    return None
+
+
+@tbot.on(events.NewMessage(pattern="/cs$"))
+async def _(event):
+    if event.fwd_from:
+        return
+    if event.is_group:
+        if await is_register_admin(event.input_chat, event.message.sender_id):
+            pass
+        else:
+            return
+    score_page = "http://static.cricinfo.com/rss/livescores.xml"
+    page = urllib.request.urlopen(score_page)
+    soup = BeautifulSoup(page, "html.parser")
+    result = soup.find_all("description")
+    Sed = ""
+    for match in result:
+        Sed += match.get_text() + "\n\n"
+    await event.reply(
+        f"<b><u>Match information gathered successful</b></u>\n\n\n<code>{Sed}</code>",
+        parse_mode="HTML",
+    )
+
+
 __mod_name__ = "Misc"
 
 __help__ = """
@@ -264,4 +316,5 @@ A module with some useful commands but without a specific category.
 - /info: get information about a user.
 - /afk (reason): Mark yourself as AFK. When marked as AFK, any mentions will be replied to with a message stating that you're not available!
 - /paste (text) or reply: Paste a text into <code>nekobin.com</code>.
+- /cs: Gathers Cricket match information (globally)
 """

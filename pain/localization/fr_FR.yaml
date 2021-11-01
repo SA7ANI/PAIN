@@ -139,7 +139,7 @@ STRINGS:
     no_rights_purge: "Vous n'avez pas les droits suffisants pour supprimer dans ce groupe !"
     reply_to_msg: "Répondre à un message pour supprimer!"
     purge_error: "Je ne peux pas continuer de purger, principalement parce que vous avez commencé à purger un message qui a été envoyé depuis plus de 2 jours."
-    fast_purge_done: "<b>Purge rapide terminée !</b>\nCe message sera supprimé dans 5 secondes."
+    fast_purge_done: "Purged {count} messages in seconds."
     purge_user_done: "Tous les messages de {user} ont été supprimés avec succès !"
   misc:
     your_id: "Votre ID: <code>{id}</code>\n"
@@ -170,8 +170,9 @@ STRINGS:
     emoji_not_allowed: "Je suis désolé, mais les rôles d'administration ne peuvent pas avoir d'émojis 😞"
   pm_menu:
     start_hi_group: 'Salut ! Je m''appelle PAIN'
-    start_hi: "Bonjour! Je m'appelle PAIN, je vous aide à gérer votre groupe de manière efficace !"
-    btn_source: "📦 Code source"
+    start_hi: "Bonjour! Je m'appelle PAIN, je vous aide à gérer votre groupe de manière efficace !\n\nDes problèmes ou besoin d'aide me concernant? rejoignez notre groupe @TheKonoha11."
+    btn_add: "Add PAIN to Group 👥"
+    btn_support: "💎 Soutien"
     btn_help: "❔ Aide"
     btn_lang: "🇷🇺 Langue"
     btn_channel: "📬 PAIN News"

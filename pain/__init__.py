@@ -51,6 +51,9 @@ if url := get_str_key("BOTAPI_SERVER"):
 else:
     server = TELEGRAM_PRODUCTION
 
+# Sudo Users
+SUDO_USERS = get_str_key("SUDO_USERS", required=True)
+
 # AIOGram
 bot = Bot(token=TOKEN, parse_mode=types.ParseMode.HTML, server=server)
 storage = RedisStorage2(

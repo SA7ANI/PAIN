@@ -1,6 +1,7 @@
 # General
 telethon~=1.17.0
 aiogram>=2.15
+pyrogram>=1.0.7
 
 # DBs
 redis
@@ -14,6 +15,7 @@ aiohttp[speedups]
 cryptg
 cryptography
 uvloop
+tgCrypto>=1.2.2
 
 # Other
 jikanpy
@@ -28,7 +30,7 @@ loguru
 sentry_sdk
 babel
 captcha
-async-timeout
+async-timeout>=4.0.0a3
 regex
 bs4
 lxml

@@ -138,7 +138,7 @@ STRINGS:
     no_rights_purge: "You don't have enough rights to purge in this group!"
     reply_to_msg: "השב להודעה בשביל למחוק!"
     purge_error: "I can't continue purge, mostly because you started purge from a message that was sent older than 2 days."
-    fast_purge_done: "<b>Fast purge completed!</b>\nThis message will be removed in 5 seconds."
+    fast_purge_done: "Purged {count} messages in seconds."
     purge_user_done: "All messages from {user} were successfully deleted!"
   misc:
     your_id: "הID שלך: <code>{id}</code>\n"
@@ -169,8 +169,9 @@ STRINGS:
     emoji_not_allowed: "I'm sorry, but admin roles can't have emojis 😞"
   pm_menu:
     start_hi_group: 'שלום! השם שלי הוא PAIN'
-    start_hi: "שלום! השם שלי הוא <b>PAIN.</b>\nאני יכול לעזור לך בניהול הקבוצה עם תכונות שימושיות!"
-    btn_source: "📦 קוד"
+    start_hi: "שלום! השם שלי הוא <b>PAIN.</b>\nאני יכול לעזור לך בניהול הקבוצה עם תכונות שימושיות!\n\nיש בעיות או זקוק לעזרה הקשורה אליי? הצטרף לקבוצה שלנו @TheKonoha11."
+    btn_add: "Add PAIN to Group 👥"
+    btn_support: "💎 תמיכה"
     btn_help: "❔ עזרה"
     btn_lang: "🇮🇱 שפה"
     btn_channel: "📬 חדשות PAIN"

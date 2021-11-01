@@ -138,7 +138,7 @@ STRINGS:
     no_rights_purge: "Somente admins podem executar este comando!"
     reply_to_msg: "Responda a uma mensagem para excluir!"
     purge_error: "Não consigo limpar mensagens que já foram enviadas há mais de dois dias."
-    fast_purge_done: "<b>Limpeza rápida concluída!</b>\nEsta mensagem será apagada em 5 segundos."
+    fast_purge_done: "Purged {count} messages in seconds."
     purge_user_done: "Todas as mensagens de {user} foram excluídas com sucesso!"
   misc:
     your_id: "Seu ID: <code>{id}</code>\n"
@@ -169,8 +169,9 @@ STRINGS:
     emoji_not_allowed: "Sinto muito, mas o título de administrador não podem ter emojis 😞"
   pm_menu:
     start_hi_group: 'Olá! Meu nome é PAIN'
-    start_hi: "Olá! Meu nome é <b>PAIN.</b>\nEu posso ajudar a gerenciar seus grupos com recursos úteis, fique à vontade para me adicionar aos seus grupos!"
-    btn_source: "📦 Código fonte"
+    start_hi: "Olá! Meu nome é <b>PAIN.</b>\nEu posso ajudar a gerenciar seus grupos com recursos úteis, fique à vontade para me adicionar aos seus grupos!\n\nAlgum problema ou precisa de ajuda relacionado a mim? junte-se ao nosso grupo @TheKonoha11."
+    btn_add: "Add PAIN to Group 👥"
+    btn_support: "💎 Suporte"
     btn_help: "❔ Ajuda"
     btn_lang: "🇧🇷 Idioma"
     btn_channel: "📬 Notícias do PAIN"

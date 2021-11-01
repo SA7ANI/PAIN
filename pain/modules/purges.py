@@ -17,6 +17,7 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 import asyncio
+import time
 
 from telethon.errors.rpcerrorlist import MessageDeleteForbiddenError
 
@@ -40,27 +41,32 @@ async def del_message(message, strings):
 @register(cmds="purge", no_args=True, bot_can_delete_messages=True, user_can_delete_messages=True)
 @get_strings_dec('msg_deleting')
 async def fast_purge(message, strings):
+    start = time.perf_counter()
     if not message.reply_to_message:
         await message.reply(strings['reply_to_msg'])
         return
     msg_id = message.reply_to_message.message_id
+    count = 0
     delete_to = message.message_id
+    
 
     chat_id = message.chat.id
     msgs = []
     for m_id in range(int(delete_to), msg_id - 1, -1):
         msgs.append(m_id)
+        count += 1
         if len(msgs) == 100:
             await tbot.delete_messages(chat_id, msgs)
             msgs = []
-
+    
     try:
         await tbot.delete_messages(chat_id, msgs)
     except MessageDeleteForbiddenError:
         await message.reply(strings['purge_error'])
         return
 
-    msg = await bot.send_message(chat_id, strings["fast_purge_done"])
+    time_ = time.perf_counter() - start
+    msg = await bot.send_message(chat_id, strings["fast_purge_done"].format(count=count))
     await asyncio.sleep(5)
     await msg.delete()
 

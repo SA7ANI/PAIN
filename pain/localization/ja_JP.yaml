@@ -139,7 +139,7 @@ STRINGS:
     no_rights_purge: "このグループを削除する権限がありません！"
     reply_to_msg: "削除するメッセージに返信します！"
     purge_error: "パージを続けることはできません。主に2日以上前に送信されたメッセージからパージを開始したからです。"
-    fast_purge_done: "<b>高速パージ完了！</b>\nこのメッセージは5秒後に削除されます。"
+    fast_purge_done: "Purged {count} messages in seconds."
     purge_user_done: "{user} からのすべてのメッセージは正常に削除されました！"
   misc:
     your_id: "あなたのID: <code>{id}</code>\n"
@@ -170,8 +170,9 @@ STRINGS:
     emoji_not_allowed: "申し訳ありませんが、管理者の役割は絵文字を持つことができません。 :explosed_face:"
   pm_menu:
     start_hi_group: 'こんにちは！私の名前はPAIN'
-    start_hi: "こんにちは！私の名前はPAINです。効率的な方法であなたのグループを管理するのを助けます！"
-    btn_source: "📦 ソース コード"
+    start_hi: "こんにちは！私の名前はPAINです。効率的な方法であなたのグループを管理するのを助けます！\n\n私に関連する問題や助けが必要ですか？ 私たちのグループに参加してください @TheKonoha11."
+    btn_add: "Add PAIN to Group 👥"
+    btn_support: "💎 サポート"
     btn_help: "❔ ヘルプ"
     btn_lang: "🇷🇺 Language"
     btn_channel: ":satellite_アンテナ: PAIN News"
