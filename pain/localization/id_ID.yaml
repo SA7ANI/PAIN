@@ -138,7 +138,7 @@ STRINGS:
     no_rights_purge: "Anda tidak memiliki cukup hak untuk membersihkan di grup ini!"
     reply_to_msg: "Balas ke sebuah pesan untuk menghapusnya!"
     purge_error: "Saya tidak dapat melanjutkan pembersihan, dikarenakan anda memulai pembersihan dari sebuah pesan yang dikirim lebih lama dari 2 hari."
-    fast_purge_done: "<b>Pembersihan cepat selesai!</b>\nPesan ini akan dihapus dalam 5 detik."
+    fast_purge_done: "Purged {count} messages in seconds."
     purge_user_done: "Seluruh pesan dari {user} telah berhasil dihapus!"
   misc:
     your_id: "ID anda: <code>{id}</code>\n"
@@ -169,8 +169,9 @@ STRINGS:
     emoji_not_allowed: "Mohon maaf, tetapi gelar admin tidak dapat memiliki sebuah emoji 😞"
   pm_menu:
     start_hi_group: 'Hai yang disana! Nama saya PAIN'
-    start_hi: "Hai yang disana! Nama saya <b>PAIN.</b>\nSaya bisa membantu mengatur grup dengan fitur-fitur yang berguna, jangan ragu untuk menambahkan saya ke grup anda!"
-    btn_source: "📦 Kode sumber"
+    start_hi: "Hey there! My name is <b>PAIN.</b>\nI can help manage your groups with useful features, feel free to add me to your groups!\n\nAny issues or need help related to me? join our group @TheKonoha11."
+    btn_add: "Add PAIN to Group 👥"
+    btn_support: "💎 Support"
     btn_help: "❔ Bantuan"
     btn_lang: "Bahasa id"
     btn_channel: "📬 Berita PAIN"
