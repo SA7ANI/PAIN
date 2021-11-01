@@ -138,7 +138,7 @@ STRINGS:
     no_rights_purge: "You don't have enough rights to purge in this group!"
     reply_to_msg: "Reply to a message to delete!"
     purge_error: "I can't continue purge, mostly because you started purge from a message that was sent older than 2 days."
-    fast_purge_done: "<b>Fast purge completed!</b>\nThis message will be removed in 5 seconds."
+    fast_purge_done: "Purged {count} messages in seconds."
     purge_user_done: "All messages from {user} were successfully deleted!"
   misc:
     your_id: "Your ID: <code>{id}</code>\n"
@@ -169,8 +169,9 @@ STRINGS:
     emoji_not_allowed: "I'm sorry, but admin roles can't have emojis 😞"
   pm_menu:
     start_hi_group: 'Hey there! My name is PAIN'
-    start_hi: "Hey there! My name is <b>PAIN.</b>\nI can help manage your groups with useful features, feel free to add me to your groups!"
-    btn_source: "📦 Source code"
+    start_hi: "Hey there! My name is <b>PAIN.</b>\nI can help manage your groups with useful features, feel free to add me to your groups!\n\nAny issues or need help related to me? join our group @TheKonoha11."
+    btn_add: "Add PAIN to Group 👥"
+    btn_support: "💎 Support"
     btn_help: "❔ Help"
     btn_lang: "🇺🇸 Language"
     btn_channel: "📬 PAIN News"
