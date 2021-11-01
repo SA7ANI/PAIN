@@ -1,5 +1,6 @@
 # PAIN
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/7f8d0049f80a457f90daebe39a7e1763)](https://app.codacy.com/gh/SA7ANI/PAIN?utm_source=github.com&utm_medium=referral&utm_content=SA7ANI/PAIN&utm_campaign=Badge_Grade_Settings)
 [![Crowdin](https://badges.crowdin.net/pain/localized.svg)](https://crowdin.com/project/pain)
 [![GitHub contributors](https://img.shields.io/github/contributors/SA7ANI/PAIN.svg)](https://GitHub.com/SA7ANI/PAIN/graphs/contributors/)
 
